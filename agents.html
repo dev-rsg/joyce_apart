@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | JOYCE APART</title>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="../index.css">
+    <!-- Link to icons -->
+   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link swiper css -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+</head>
+<body>
+
+    <div class="adminDasboard flex">
+
+        <div class="sideMenu">
+            <div class="logoDiv flex">
+                <img src="../Assets/logo.png" alt="Logo Image">
+                <h3>Joyce Apart</h3>
+            </div>
+          <div class="menu">
+            <ul class="menuItem grid">
+                <li class="menuList flex">
+                    <a href="admin.html" class="menuLink linkActive flex">
+                        <i class="uil uil-create-dashboard icon"></i>
+                        <span class="text">Tableau de board</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex">
+                    <a href="./properties.html" class="menuLink flex">
+                        <i class="uil uil-building icon"></i>
+                        <span class="text">Ma propriété</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex">
+                    <a href="todo.html" class="menuLink flex">
+                        <i class="uil uil-clipboard-alt icon"></i>
+                        <span class="text">A faire</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="tenants.html" class="menuLink flex">
+                        <i class="uil uil-user-circle icon"></i>
+                        <span class="text">Locataires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="agents.html" class="menuLink flex">
+                        <i class="uil uil-exchange icon"></i>
+                        <span class="text">Propriétaires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="reviews.html" class="menuLink flex">
+                        <i class="uil uil-comment-message icon"></i>
+                        <span class="text">Commentaires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="messages.html" class="menuLink flex">
+                        <i class="uil uil-envelope-question icon"></i>
+                        <span class="text">Messages</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="calender.html" class="menuLink flex">
+                        <i class="uil uil-calendar-alt icon"></i>
+                        <span class="text">Calendrier</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="updates.html" class="menuLink flex">
+                        <i class="uil uil-bell icon"></i>
+                        <span class="text">Mise à jour</span>
+                    </a>
+                </li> 
+            </ul>
+          </div>
+
+          <div class="accountDiv">
+            <div class="imgDiv">
+                <img src="../Assets/user (1).jpg" alt="Admin Image">
+            </div>
+            <span class="name">OHIN A. Brice Léon</span>
+            <p>ohinbriceleon98@yahoo.com</p>
+
+            <div class="accountBtns flex">
+                <a href="../login.html">
+                    <button class="btn bg flex">
+                        <i class="uil uil-sign-out-alt icon"></i>
+                        Se déconnecter
+                    </button>
+                </a>
+                <a href="settings.html">
+                    <button class="btn bg flex">
+                        <i class="uil uil-setting icon"></i>
+                    </button>
+                </a>
+            </div>
+           
+          </div>
+        </div>
+
+
+        <div class="agentsBody">
+            <div class="top flex">
+                <h1 class="titleText">
+                    Propriétaires vérifiés
+                </h1>
+                <p>Salut Léon, as-tu dit bonjour à l'un d'entre eux aujourd'hui <i class="uil uil-grin icon"></i>?</p>
+
+                <a href="addAgent.html"><button  class="flex btn bg">
+                    <i class="uil uil-plus"></i> Ajouter Propriétaire
+                </button></a>
+            </div>
+
+            <div class="agentsDiv">
+                <table>
+                    <tr>
+                        <th>ID Propriétaire</th>
+                        <th>Résumé</th>
+                        <th>Contact</th>
+                        <th>Entreprise</th>
+                        <th>Propriétés</th>
+                        <th>Ventes</th>
+                        <th>Commission</th>
+                        <th>Details</th>
+                    </tr>
+
+                    <tr>
+                        <td class="id">001</td>
+                        <td class="tenantInfo flex">
+                            <div class="imgDiv">
+                                <img src="../Assets/user (12).png" alt="Tenant Image">
+                            </div>
+                            <div class="info">
+                                <span class="name">Nayeare Tauin</span>
+
+                                <span class="nationlity">Canada</span>
+                                <p>Réponse: 15 Min</p>
+                            </div>
+                        </td>
+
+                        <td class="sDate">
+                            <span class="date flex"><i class="uil uil-phone icon"></i>+444 909 884</span>
+                            <p>example@outlook.com</p>
+                        </td>
+
+                        <td class="rentFee">
+                            <span class="fees flex"><i class="uil uil-award icon"></i>Emmanuel</span>
+                            <p>Immobilier</p>
+                        </td>
+
+                        <td class="eDate">
+                            <span class="date flex"><i class="uil uil-building icon"></i> 16</span>
+                            <p>Propriétés vérifiées</p>
+                        </td>
+
+                       
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>1,110,000</span>
+                            <p>Est. de toutes les propriétés</p>
+                        </td>
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>20,000/m</span>
+                            <p>20% sur les ventes.</p>
+                        </td>
+
+
+                        <td class="action">
+                            <a href="agentDetails.html">
+                                <i class="uil uil-file-info-alt icon"></i>
+                            </a>
+                            
+  
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="id">001</td>
+                        <td class="tenantInfo flex">
+                            <div class="imgDiv">
+                                <img src="../Assets/user (21).png" alt="Tenant Image">
+                            </div>
+                            <div class="info">
+                                <span class="name">Nayeare Tauin</span>
+
+                                <span class="nationlity">France</span>
+                                <p>Réponse: 15 Min</p>
+                            </div>
+                        </td>
+
+                        <td class="sDate">
+                            <span class="date flex"><i class="uil uil-phone icon"></i>+444 909 884</span>
+                            <p>example@outlook.com</p>
+                        </td>
+
+                        <td class="rentFee">
+                            <span class="fees flex"><i class="uil uil-award icon"></i>Justin</span>
+                            <p>Immobilier</p>
+                        </td>
+
+                        <td class="eDate">
+                            <span class="date flex"><i class="uil uil-building icon"></i> 16</span>
+                            <p>Propriétés vérifiées</p>
+                        </td>
+
+                       
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>1,110,000</span>
+                            <p>Est. de toutes les propriétés</p>
+                        </td>
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>20,000/m</span>
+                            <p>20% sur les ventes.</p>
+                        </td>
+
+
+                        <td class="action">
+                            <a href="agentDetails.html">
+                                <i class="uil uil-file-info-alt icon"></i>
+                            </a>
+                            
+  
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="id">001</td>
+                        <td class="tenantInfo flex">
+                            <div class="imgDiv">
+                                <img src="../Assets/user (13).png" alt="Tenant Image">
+                            </div>
+                            <div class="info">
+                                <span class="name">Nayeare Tauin</span>
+
+                                <span class="nationlity">Belgique</span>
+                                <p>Réponse: 15 Min</p>
+                            </div>
+                        </td>
+
+                        <td class="sDate">
+                            <span class="date flex"><i class="uil uil-phone icon"></i>+444 909 884</span>
+                            <p>example@outlook.com</p>
+                        </td>
+
+                        <td class="rentFee">
+                            <span class="fees flex"><i class="uil uil-award icon"></i>Kossigan</span>
+                            <p>Immobilier</p>
+                        </td>
+
+                        <td class="eDate">
+                            <span class="date flex"><i class="uil uil-building icon"></i> 16</span>
+                            <p>Propriétés vérifiées</p>
+                        </td>
+
+                       
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>1,110,000</span>
+                            <p>Est. de toutes les propriétés</p>
+                        </td>
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>20,000/m</span>
+                            <p>20% sur les ventes.</p>
+                        </td>
+
+
+                        <td class="action">
+                            <a href="agentDetails.html">
+                                <i class="uil uil-file-info-alt icon"></i>
+                            </a>
+                            
+  
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="id">001</td>
+                        <td class="tenantInfo flex">
+                            <div class="imgDiv">
+                                <img src="../Assets/user (14).png" alt="Tenant Image">
+                            </div>
+                            <div class="info">
+                                <span class="name">Nayeare Tauin</span>
+
+                                <span class="nationlity">Belgique</span>
+                                <p>Réponse: 15 Min</p>
+                            </div>
+                        </td>
+
+                        <td class="sDate">
+                            <span class="date flex"><i class="uil uil-phone icon"></i>+444 909 884</span>
+                            <p>example@outlook.com</p>
+                        </td>
+
+                        <td class="rentFee">
+                            <span class="fees flex"><i class="uil uil-award icon"></i>Jacob</span>
+                            <p>Immobilier</p>
+                        </td>
+
+                        <td class="eDate">
+                            <span class="date flex"><i class="uil uil-building icon"></i> 16</span>
+                            <p>Propriétés vérifiées</p>
+                        </td>
+
+                       
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>1,110,000</span>
+                            <p>Est. de toutes les propriétés</p>
+                        </td>
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>20,000/m</span>
+                            <p>20% sur les ventes.</p>
+                        </td>
+
+
+                        <td class="action">
+                            <a href="agentDetails.html">
+                                <i class="uil uil-file-info-alt icon"></i>
+                            </a>
+                            
+  
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="id">001</td>
+                        <td class="tenantInfo flex">
+                            <div class="imgDiv">
+                                <img src="../Assets/user (19).png" alt="Tenant Image">
+                            </div>
+                            <div class="info">
+                                <span class="name">Nayeare Tauin</span>
+
+                                <span class="nationlity">Canada</span>
+                                <p>Réponse: 15 Min</p>
+                            </div>
+                        </td>
+
+                        <td class="sDate">
+                            <span class="date flex"><i class="uil uil-phone icon"></i>+444 909 884</span>
+                            <p>example@outlook.com</p>
+                        </td>
+
+                        <td class="rentFee">
+                            <span class="fees flex"><i class="uil uil-award icon"></i>Justin</span>
+                            <p>Immobilier</p>
+                        </td>
+
+                        <td class="eDate">
+                            <span class="date flex"><i class="uil uil-building icon"></i> 16</span>
+                            <p>Propriétés vérifiées</p>
+                        </td>
+
+                       
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>1,110,000</span>
+                            <p>Est. de toutes les propriétés</p>
+                        </td>
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>20,000/m</span>
+                            <p>20% sur les ventes.</p>
+                        </td>
+
+
+                        <td class="action">
+                            <a href="agentDetails.html">
+                                <i class="uil uil-file-info-alt icon"></i>
+                            </a>
+                            
+  
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="id">001</td>
+                        <td class="tenantInfo flex">
+                            <div class="imgDiv">
+                                <img src="../Assets/user (10).png" alt="Tenant Image">
+                            </div>
+                            <div class="info">
+                                <span class="name">Nayeare Tauin</span>
+
+                                <span class="nationlity">Canada</span>
+                                <p>Réponse: 15 Min</p>
+                            </div>
+                        </td>
+
+                        <td class="sDate">
+                            <span class="date flex"><i class="uil uil-phone icon"></i>+444 909 884</span>
+                            <p>example@outlook.com</p>
+                        </td>
+
+                        <td class="rentFee">
+                            <span class="fees flex"><i class="uil uil-award icon"></i>David</span>
+                            <p>Immobilier</p>
+                        </td>
+
+                        <td class="eDate">
+                            <span class="date flex"><i class="uil uil-building icon"></i> 16</span>
+                            <p>Propriétés vérifiées</p>
+                        </td>
+
+                       
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>1,110,000</span>
+                            <p>Est. de toutes les propriétés</p>
+                        </td>
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>20,000/m</span>
+                            <p>20% sur les ventes.</p>
+                        </td>
+
+
+                        <td class="action">
+                            <a href="agentDetails.html">
+                                <i class="uil uil-file-info-alt icon"></i>
+                            </a>
+                            
+  
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="id">001</td>
+                        <td class="tenantInfo flex">
+                            <div class="imgDiv">
+                                <img src="../Assets/user (15).png" alt="Tenant Image">
+                            </div>
+                            <div class="info">
+                                <span class="name">Nayeare Tauin</span>
+
+                                <span class="nationlity">Belgique</span>
+                                <p>Réponse: 15 Min</p>
+                            </div>
+                        </td>
+
+                        <td class="sDate">
+                            <span class="date flex"><i class="uil uil-phone icon"></i>+444 909 884</span>
+                            <p>example@outlook.com</p>
+                        </td>
+
+                        <td class="rentFee">
+                            <span class="fees flex"><i class="uil uil-award icon"></i>IsraTech</span>
+                            <p>Immobilier</p>
+                        </td>
+
+                        <td class="eDate">
+                            <span class="date flex"><i class="uil uil-building icon"></i> 16</span>
+                            <p>Propriétés vérifiées</p>
+                        </td>
+
+                       
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>1,110,000</span>
+                            <p>Est. de toutes les propriétés</p>
+                        </td>
+
+                        <td class="debt">
+                            <span class="fees flex"><i class="uil uil-usd-circle icon"></i>20,000/m</span>
+                            <p>20% sur les ventes.</p>
+                        </td>
+
+
+                        <td class="action">
+                            <a href="agentDetails.html">
+                                <i class="uil uil-file-info-alt icon"></i>
+                            </a>
+                            
+  
+                        </td>
+
+                    </tr>
+
+
+
+                    
+                    
+                </table>
+            </div>
+        </div>    
+    </div>    
+
+</body>
+</html>  

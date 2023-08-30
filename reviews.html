@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>Admin Dashboard | JOYCE APART</title>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="../index.css">
+    <!-- Link to icons -->
+   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link swiper css -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+</head>
+<body>
+
+    <div class="adminDasboard flex">
+
+        <div class="sideMenu">
+            <div class="logoDiv flex">
+                <img src="../Assets/logo.png" alt="Logo Image">
+                <h3>Joyce Apart</h3>
+            </div>
+          <div class="menu">
+            <ul class="menuItem grid">
+                <li class="menuList flex">
+                    <a href="admin.html" class="menuLink linkActive flex">
+                        <i class="uil uil-create-dashboard icon"></i>
+                        <span class="text">Tableau de board</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex">
+                    <a href="./properties.html" class="menuLink flex">
+                        <i class="uil uil-building icon"></i>
+                        <span class="text">Ma propriété</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex">
+                    <a href="todo.html" class="menuLink flex">
+                        <i class="uil uil-clipboard-alt icon"></i>
+                        <span class="text">A faire</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="tenants.html" class="menuLink flex">
+                        <i class="uil uil-user-circle icon"></i>
+                        <span class="text">Locataires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="agents.html" class="menuLink flex">
+                        <i class="uil uil-exchange icon"></i>
+                        <span class="text">Propriétaires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="reviews.html" class="menuLink flex">
+                        <i class="uil uil-comment-message icon"></i>
+                        <span class="text">Commentaires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="messages.html" class="menuLink flex">
+                        <i class="uil uil-envelope-question icon"></i>
+                        <span class="text">Messages</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="calender.html" class="menuLink flex">
+                        <i class="uil uil-calendar-alt icon"></i>
+                        <span class="text">Calendrier</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="updates.html" class="menuLink flex">
+                        <i class="uil uil-bell icon"></i>
+                        <span class="text">Mise à jour</span>
+                    </a>
+                </li> 
+            </ul>
+          </div>
+
+          <div class="accountDiv">
+            <div class="imgDiv">
+                <img src="../Assets/user (1).jpg" alt="Admin Image">
+            </div>
+            <span class="name">OHIN A. Brice Léon</span>
+            <p>ohinbriceleon98@yahoo.com</p>
+
+            <div class="accountBtns flex">
+                <a href="../login.html">
+                    <button class="btn bg flex">
+                        <i class="uil uil-sign-out-alt icon"></i>
+                        Se déconnecter
+                    </button>
+                </a>
+                <a href="settings.html">
+                    <button class="btn bg flex">
+                        <i class="uil uil-setting icon"></i>
+                    </button>
+                </a>
+            </div>
+           
+          </div>
+        </div>
+
+
+        <div class="reviewBody">
+            <div class="top flex greyBg">
+                <h1 class="titleText">
+                    Avis Clients
+                </h1>
+                
+                <p>Les avis sont ce qui améliore notre travail !</p>
+            </div>
+
+            <div class="reviewSection">
+                <div class="semi_navBar flex">
+                    <span class="menuItem activeList" data-filter="all">Tout</span>
+                    <span class="menuItem" data-filter="pending">En attente</span>
+                    <span class="menuItem" data-filter="published">Publié</span>
+                </div>
+                <div class="reviewHeading flex">
+                 <table>
+
+                    <tr class="tr">
+                        <th>Type</th>
+                        <th>Critique</th>
+                        <th>Examen</th>
+                        <th>Statut</th>
+                    </tr>
+
+                    <tr class="dataItem live" data-item="published">
+                        <td>
+                           <i class='bx bxs-message-square-dots icon' ></i>
+                          <h4>Examen du propriétaire</h4>
+                        </td>
+
+                       <td>
+                         <div class="reviewer flex">
+                            <img src="../Assets/user (5).png" alt="">
+                            <div>
+                              <h4>Christine Loro</h4>
+                            <p>Uganda</p>
+                            </div>
+                         </div>
+                        </td>
+
+                       <td>
+                          <h5>Super soutien de l'agent!</h5>
+                          <p>Il m'a aidé tout au long du processus pour vérifier la maison. Il s'est assuré que mon paiement a été effectué à temps aux services externalisés. Bon travail!</p>
+                       </td>
+
+                        <td>
+                            <div class=" statusTd flex">
+                                <p>2022/10/14</p>
+                                <span class="published">
+                                    Publié
+                                </span>
+
+                                <i class='bx bx-dots-horizontal-rounded dotsIcon icon'></i>
+
+                                <form action="" class="updateStatus ">
+                                    <h4>État de mise à jour</h4>
+                                    <select name="reviewStatus" id="" value="pending">
+                                        <option value="pending">
+                                            En attente
+                                        </option>
+
+                                        <option value="published">
+                                            Publié
+                                        </option>
+                                       
+                                    </select>
+                                    <button name="submit" class="btn bg flex"> Mise à jour <i class="uil uil-cloud-redo icon"></i></button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="dataItem live" data-item="published">
+                        <td>
+                            <i class='bx bxs-message-square-dots icon' ></i>
+                           <h4>Examen de la propriété</h4>
+                        </td>
+
+                       <td>
+                          <div class="reviewer flex">
+                                <img src="../Assets/user (2).png" alt="">
+                                <div>
+                                <h4>Christine Loro</h4>
+                                <p>Texas, USA</p>
+                                </div>
+                          </div>
+                       </td>
+
+                       <td>
+                          <h5>J'aime cette propriété</h5>
+                          <p>Cet appartement dispose de suffisamment de parking gratuit et d'un excellent protocole de sécurité.</p>
+                       </td>
+
+                       <td>
+                         <div class="statusTd flex">
+                            <p>2022/10/14</p>
+
+                            <span class="published">
+                               Publié
+                           </span>
+   
+                           <i class='bx bx-dots-horizontal-rounded dotsIcon icon'></i>
+                           <form action="" class="updateStatus ">
+                            <h4>État de mise à jour</h4>
+                            <select name="reviewStatus" id="" value="pending">
+                                <option value="pending">
+                                    En attente
+                                </option>
+
+                                <option value="published">
+                                    Publié
+                                </option>
+                               
+                            </select>
+                            <button name="submit" class="btn bg flex"> Mise à jour <i class="uil uil-cloud-redo icon"></i></button>
+                        </form>
+                        </div>
+                       
+                     </td>
+                    </tr>
+
+                    <tr class="dataItem live" data-item="pending">
+                        <td>
+                            <i class='bx bxs-message-square-dots icon' ></i>
+                           <h4>Examen de l'agent</h4>
+                        </td>
+
+                       <td>
+                            <div class="reviewer flex">
+                                <img src="../Assets/user (1).png" alt="">
+                                <div>
+                                <h4>Nimusiima Tan</h4>
+                                <p>Morocco</p>
+                                </div>
+                            </div>
+                     </td>
+
+                       <td>
+                          <h5>Super soutien de l'agent!</h5>
+                          <p>Il m'a aidé tout au long du processus pour vérifier la maison. Il s'est assuré que mon paiement a été effectué à temps aux services externalisés. Bon travail! </p>
+                       </td>
+
+                       <td>
+                         <div class="statusTd flex">
+                            <p>2022/10/14</p>
+                        <span class="pending">
+                            En attente
+                        </span>
+
+                        <i class='bx bx-dots-horizontal-rounded dotsIcon icon'></i>
+                         </div>
+                        
+                      </td>
+                    </tr>
+
+                    <tr class="dataItem live" data-item="published">
+                        <td>
+                            <i class='bx bxs-message-square-dots icon' ></i>
+                           <h4>Examen de la propriété</h4>
+                        </td>
+
+                       <td>
+                           <div class="flex reviewer">
+                                <img src="../Assets/user (1).jpg" alt="">
+                                <div>
+                                <h4>Abaho Jackie</h4>
+                                <p>Jameica</p>
+                                </div>
+                           </div>
+                     </td>
+
+                       <td>
+                          <h5>Super soutien de l'agent!</h5>
+                          <p>Il m'a aidé tout au long du processus pour vérifier la maison. Il s'est assuré que mon paiement a été effectué à temps aux services externalisés. Bon travail!</p>
+                       </td>
+
+                       <td>
+                            <div class="flex statusTd">
+                                <p>2022/10/14</p>
+
+                                <span class="published">
+                                    Publié
+                                </span>
+
+                                <i class='bx bx-dots-horizontal-rounded dotsIcon icon'></i>
+                            </div>
+                     </td>
+                    </tr>
+
+                 </table>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+
+    <!-- Link admin.js -->
+    <script src="./admin.js"></script>
+</body>
+</html>

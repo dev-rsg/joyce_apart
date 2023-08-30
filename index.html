@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | JOYCE APART</title>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="../index.css">
+    <!-- Link to icons -->
+   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link swiper css -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+</head>
+<body>
+    <div class="adminDasboard flex">
+
+        <div class="sideMenu">
+            <div class="logoDiv flex">
+                <img src="../Assets/logo.png" alt="Logo Image">
+                <h3>Joyce Apart</h3>
+            </div>
+          <div class="menu">
+            <ul class="menuItem grid">
+                <li class="menuList flex">
+                    <a href="admin.html" class="menuLink linkActive flex">
+                        <i class="uil uil-create-dashboard icon"></i>
+                        <span class="text">Tableau de board</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex">
+                    <a href="./properties.html" class="menuLink flex">
+                        <i class="uil uil-building icon"></i>
+                        <span class="text">Ma propriété</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex">
+                    <a href="todo.html" class="menuLink flex">
+                        <i class="uil uil-clipboard-alt icon"></i>
+                        <span class="text">A faire</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="tenants.html" class="menuLink flex">
+                        <i class="uil uil-user-circle icon"></i>
+                        <span class="text">Locataires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="agents.html" class="menuLink flex">
+                        <i class="uil uil-exchange icon"></i>
+                        <span class="text">Propriétaires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="reviews.html" class="menuLink flex">
+                        <i class="uil uil-comment-message icon"></i>
+                        <span class="text">Commentaires</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="messages.html" class="menuLink flex">
+                        <i class="uil uil-envelope-question icon"></i>
+                        <span class="text">Messages</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="calender.html" class="menuLink flex">
+                        <i class="uil uil-calendar-alt icon"></i>
+                        <span class="text">Calendrier</span>
+                    </a>
+                </li> 
+
+                <li class="menuList flex"> 
+                    <a href="updates.html" class="menuLink flex">
+                        <i class="uil uil-bell icon"></i>
+                        <span class="text">Mise à jour</span>
+                    </a>
+                </li> 
+            </ul>
+          </div>
+
+          <div class="accountDiv">
+            <div class="imgDiv">
+                <img src="../Assets/user (1).jpg" alt="Admin Image">
+            </div>
+            <span class="name">OHIN A. Brice Léon</span>
+            <p>ohinbriceleon98@yahoo.com</p>
+
+            <div class="accountBtns flex">
+                <a href="../login.html">
+                    <button class="btn bg flex">
+                        <i class="uil uil-sign-out-alt icon"></i>
+                        Se déconnecter
+                    </button>
+                </a>
+                <a href="settings.html">
+                    <button class="btn bg flex">
+                        <i class="uil uil-setting icon"></i>
+                    </button>
+                </a>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="body">
+            <div class="top flex">
+                <h1 class="titleText">
+                    Tableau de board
+                </h1>
+                <p>Salut Léon , Bienvenue sur Joyce Apart !</p>
+            </div>
+            
+            <div class="summaryDiv flex">
+                <div>
+                    <h1>56</h1>
+                    <p>PROPRIÉTÉS</p>
+                    <small>Uniquement les propriétés vérifiées</small>
+                    <h1 class="overlay">56</h1>
+                </div>
+                <div>
+                    <h1>12</h1>
+                    <p>PROPRIÉTAIRES</p>
+                    <small>Seuls les propriétaires vérifiés</small>
+                    <h1 class="overlay">12</h1>
+                </div>
+                <div>
+                    <h1>10</h1>
+                    <p>LOCATAIRE</p>
+                    <small>Familles indépendants</small>
+                    <h1 class="overlay">10</h1>
+                </div>
+                <div>
+                    <h1>6,491,601€</h1>
+                    <p>Est. REVENU</p>
+                    <small>De toutes les propriétés vérifiées</small>
+                    <h1 class="overlay">6,491,601</h1>
+                </div>
+            </div>
+
+            <div class="homeTodos">
+                <div class="todoDiv">
+                    <div class="divTitle flex">
+                        <h3>Missions hautement prioritaires</h3>
+                    </div>
+    
+                    <div class="todos flex">
+                        <div class="singleTodo">
+                            <div class="flex">
+                                <span>2022/01/08</span>
+                                <div class="btns">
+                                  <a href="todo.html">
+                                    <i class="uil uil-file-info-alt icon"></i>
+                                  </a>
+                                </div>
+                            </div>
+                            <h3 class="todoTitle">Réflexion</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi quis rerum modi voluptate accusamus iste, ipsam officiis necessitatibus. Excepturi!</p>
+                        </div>
+                        <div class="singleTodo">
+                            <div class="flex">
+                                <span>2022/01/08</span>
+                                <div class="btns">
+                                    <a href="todo.html">
+                                      <i class="uil uil-file-info-alt icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="todoTitle">Rencontre avec M. Arison</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi quis rerum modi voluptate accusamus iste, ipsam officiis necessitatibus. Excepturi!</p>
+                        </div>
+                        <div class="singleTodo">
+                            <div class="flex">
+                                <span>2022/01/08</span>
+                                <div class="btns">
+                                    <a href="todo.html">
+                                      <i class="uil uil-file-info-alt icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="todoTitle">Ajouter une nouvelle propriété</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi quis rerum modi voluptate accusamus iste, ipsam officiis necessitatibus. Excepturi!</p>
+                        </div>
+                        <div class="singleTodo">
+                            <div class="flex">
+                                <span>2022/01/08</span>
+                                <div class="btns">
+                                    <a href="todo.html">
+                                      <i class="uil uil-file-info-alt icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="todoTitle">Consulter les listes de commissions</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi quis rerum modi voluptate accusamus iste, ipsam officiis necessitatibus. Excepturi!</p>
+                        </div>
+                      
+                    </div>
+    
+                   
+                </div>
+            </div>
+
+            <div class="summaryPropertyDiv">
+                <div class="divTitle flex">
+                    <h3>Louer des propriétés en retard</h3>
+                    <div class="line"></div>
+                    <div>
+                         <a href="properties.html" class="flex btn">
+                            Toutes les propriétés 
+                            <i class="uil uil-angle-right-b icon"></i>
+                         </a>
+                    </div>
+                </div>
+               <div class="propertyContainer flex">
+
+                <div class="singleProperty">
+                <div class="imgDiv">
+                    <img class="apartImg" src="../Assets/apart (3).jpg" alt="Apartment Image">
+
+                    <div class="location loctionActive">
+                        <span class="apartName">
+                        Appartement Harrisson
+                        </span>
+                        <span class="apartLocation">
+                        Lyon, FRANCE.
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="imgInfo">
+
+                    <div class="tenantImage">
+                        <img src="../Assets/user (1).jpg" alt="Tenant Image">
+                    </div>
+                    <div class="tenantImage">
+                        <img src="../Assets/user (5).png" alt="Tenant Image">
+                    </div>
+
+                    <div class="amenities flex">
+                        <p class="flex"><i class="uil uil-bed icon"></i> 2</p>
+
+                        <p class="flex"><i class="uil uil-bath"></i>2</p>
+
+                        <p><i class="uil uil-wifi"></i></p>
+
+                        <p><i class='bx bxs-dog icon'></i></p>
+                    </div>
+                    
+                    <div class="flex">
+                        <h1 class="price">8,000€/m</h1>
+                        <span class="status"><i class="uil uil-exclamation-triangle icon"></i></span>
+                    </div>
+            
+                    <a href="propertyDetails.html">
+                        <button class="btn">
+                            VOIR LES DÉTAILS  <i class="uil uil-arrow-up-right icon"></i>
+                        </button>
+                    </a>
+    
+                </div>
+                </div> 
+
+                <div class="singleProperty">
+                    <div class="imgDiv">
+                        <img class="apartImg" src="../Assets/apart (5).jpg" alt="Apartment Image">
+    
+                        <div class="location loctionActive">
+                           <span class="apartName">
+                            Appartement de Mwebesa
+                           </span>
+                           <span class="apartLocation">
+                            Saint-Etienne, FRANCE.
+                           </span>
+                        </div>
+    
+                    </div>
+    
+                    <div class="imgInfo">
+    
+                        <div class="tenantImage">
+                            <img src="../Assets/user (1).png" alt="Tenant Image">
+                        </div>
+                        <div class="tenantImage">
+                            <img src="../Assets/user (2).png" alt="Tenant Image">
+                        </div>
+    
+                        <div class="amenities flex">
+                            <p class="flex"><i class="uil uil-bed icon"></i> 2</p>
+    
+                            <p class="flex"><i class="uil uil-bath"></i>2</p>
+    
+                            <p><i class="uil uil-wifi"></i></p>
+    
+                            <p><i class='bx bxs-dog icon'></i></p>
+                        </div>
+                        
+                        <div class="flex">
+                            <h1 class="price">4,000€/m</h1>
+                            
+                        </div>
+                
+                        <a href="propertyDetails.html">
+                            <button class="btn">
+                                VOIR LES DÉTAILS  <i class="uil uil-arrow-up-right icon"></i>
+                            </button>
+                        </a>
+      
+                    </div>
+                   </div>
+    
+                   <div class="singleProperty">
+                    <div class="imgDiv">
+                        <img class="apartImg" src="../Assets/aprt.jpg" alt="Apartment Image">
+    
+                        <div class="location loctionActive">
+                           <span class="apartName">
+                            Appartement Abalo 
+                           </span>
+                           <span class="apartLocation">
+                            Paris, FRANCE.
+                           </span>
+                        </div>
+    
+                    </div>
+    
+                    <div class="imgInfo">
+    
+                        <div class="tenantImage">
+                            <img src="../Assets/user (1).png" alt="Tenant Image">
+                        </div>
+                        <div class="tenantImage">
+                            <img src="../Assets/user (1).jpg" alt="Tenant Image">
+                        </div>
+    
+                        <div class="amenities flex">
+                            <p class="flex"><i class="uil uil-bed icon"></i> 2</p>
+    
+                            <p class="flex"><i class="uil uil-bath"></i>2</p>
+    
+                            <p><i class="uil uil-wifi"></i></p>
+    
+                            <p><i class='bx bxs-dog icon'></i></p>
+                        </div>
+                        
+                        <div class="flex">
+                            <h1 class="price">2,000€/m</h1>
+                            
+                        </div>
+                
+                        <a href="propertyDetails.html">
+                            <button class="btn">
+                                VOIR LES DÉTAILS  <i class="uil uil-arrow-up-right icon"></i>
+                            </button>
+                        </a>
+      
+                    </div>
+                   </div>
+                  
+    
+                   <div class="singleProperty">
+                    <div class="imgDiv">
+                        <img class="apartImg" src="../Assets/aprt2.jpg" alt="Apartment Image">
+    
+                        
+    
+                        <div class="location loctionActive">
+                           <span class="apartName">
+                            Domaine Layana 
+                           </span>
+                           <span class="apartLocation">
+                            Canada.
+                           </span>
+                        </div>
+    
+                    </div>
+    
+                    <div class="imgInfo">
+    
+                        <div class="tenantImage">
+                            <img src="../Assets/user (1).png" alt="Tenant Image">
+                        </div>
+                        <div class="tenantImage">
+                            <img src="../Assets/user (5).png" alt="Tenant Image">
+                        </div>
+    
+                        <div class="amenities flex">
+                            <p class="flex"><i class="uil uil-bed icon"></i> 2</p>
+    
+                            <p class="flex"><i class="uil uil-bath"></i>2</p>
+    
+                            <p><i class="uil uil-wifi"></i></p>
+    
+                            <p><i class='bx bxs-dog icon'></i></p>
+                        </div>
+                        
+                        <div class="flex">
+                            <h1 class="price">12,000€/m</h1>
+                            
+                        </div>
+                
+                        <a href="propertyDetails.html">
+                            <button class="btn">
+                                VOIR LES DÉTAILS  <i class="uil uil-arrow-up-right icon"></i>
+                            </button>
+                        </a>
+      
+                    </div>
+                   </div>
+               </div>
+
+               
+            </div>
+
+            <div class="homeUpdatesDiv">
+                <h3>Top 3 des mises à jour</h3>
+
+                <div class="singleUpdate">
+                    <div class="cardTop flex">
+                        <span class="updateID">Joyce Apart #001</span>
+                        <span class="date">2022/04/08</span>
+                        <i class='bx bxs-pin icon'></i>
+                    </div>
+                    <p>Le marché immobilier, et en particulier le marché de l'immobilier résidentiel, fait l'objet de nombreuses discussions et débats de la part des parties prenantes depuis plusieurs années. Alors que le budget et le projet de loi de finances n'incluaient pas de changements significatifs pour le secteur de l'environnement bâti, un certain nombre de mesures ont été incluses visant à encourager le développement de l'immobilier résidentiel et à augmenter l'offre de logements. Nous passons en revue les changements pertinents qui peuvent avoir un impact sur les promoteurs et les propriétaires immobiliers en Belgique.</p>
+                    <small>par Léon Brice OHIN</small>
+                </div>
+                
+                <div class="singleUpdate">
+                    <div class="cardTop flex">
+                        <span class="updateID">Joyce Apart #001</span>
+                        <span class="date">2022/04/08</span>
+                        <i class='bx bxs-pin icon'></i>
+                    </div>
+                    <p>Le marché immobilier, et en particulier le marché de l'immobilier résidentiel, fait l'objet de nombreuses discussions et débats de la part des parties prenantes depuis plusieurs années. Alors que le budget et le projet de loi de finances n'incluaient pas de changements significatifs pour le secteur de l'environnement bâti, un certain nombre de mesures ont été incluses visant à encourager le développement de l'immobilier résidentiel et à augmenter l'offre de logements. Nous passons en revue les changements pertinents qui peuvent avoir un impact sur les promoteurs et les propriétaires immobiliers en Belgique.</p>
+                    <small>par Léon Brice OHIN</small>
+                </div>
+
+                <div class="singleUpdate">
+                    <div class="cardTop flex">
+                        <span class="updateID">Joyce Apart #001</span>
+                        <span class="date">2022/04/08</span>
+                        <i class='bx bxs-pin icon'></i>
+                    </div>
+                    <p>Le marché immobilier, et en particulier le marché de l'immobilier résidentiel, fait l'objet de nombreuses discussions et débats de la part des parties prenantes depuis plusieurs années. Alors que le budget et le projet de loi de finances n'incluaient pas de changements significatifs pour le secteur de l'environnement bâti, un certain nombre de mesures ont été incluses visant à encourager le développement de l'immobilier résidentiel et à augmenter l'offre de logements. Nous passons en revue les changements pertinents qui peuvent avoir un impact sur les promoteurs et les propriétaires immobiliers en Belgique.</p>
+                    <small>par Léon Brice OHIN</small>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <!-- Link to js -->
+    <script src="./admin.js"></script>
+</body>
+</html>
